@@ -1,0 +1,131 @@
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+/* Stack items in today-section vertically */
+.today-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Align the leaderboard to the right */
+.leaderboard {
+    margin-left: auto; /* Pushes Leaderboard to the far right */
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Tabs styling */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+
+.tab.active {
+    background: #ff8800;
+    color: #fff;
+}
+
+/* Top Leaderboard styling */
+.top-leaderboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.top-player {
+    text-align: center;
+}
+
+.top-player .name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.top-player .points {
+    font-size: 1.2rem;
+    color: green;
+}
+
+.top-player .prize {
+    color: #ff6600;
+    font-size: 0.9rem;
+}
+
+/* Main Leaderboard styling */
+.leaderboard {
+    border-top: 1px solid #ddd;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.player:last-child {
+    border-bottom: none;
+}
+
+.player .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.player .name {
+    font-weight: bold;
+}
+
+.player .rank {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.player .prize {
+    color: #ff6600;
+    font-size: 0.9rem;
+}
+
+.player .points {
+    color: green;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Highlighted player */
+.player.highlighted {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
